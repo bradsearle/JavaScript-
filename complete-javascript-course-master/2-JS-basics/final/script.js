@@ -128,7 +128,7 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). 
 
 GOOD LUCK 😀
-*/
+
 var johnMass = 150;
 var johnHeight = 6.2;
 
@@ -145,7 +145,7 @@ var higherBMI = johnBmi >= markBmi;
 console.log(higherBMI);
 
 console.log("Is Mark's BMI higher than John's? " + higherBMI);
-
+*/
 /* var massMark = 78; // kg
 var heightMark = 1.69; // meters
 
@@ -168,9 +168,9 @@ var firstName = 'John';
 var civilStatus = 'single';
 
 if (civilStatus === 'married') {
-    console.log(firstName + ' is married!');
+  console.log(firstName + ' is married!');
 } else {
-    console.log(firstName + ' will hopefully marry soon :)');
+  console.log(firstName + ' will hopefully marry soon :)');
 }
 
 
@@ -234,6 +234,19 @@ console.log(drink);
     var drink = 'juice';
 }
 
+
+*/
+var firstName = 'brad';
+var age = 17;
+
+age >= 18
+  ? console.log(firstName + ' drinks beer.')
+  : console.log(firstName + ' drinks juice');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+/*
 // Switch statement
 var job = 'instructor';
 switch (job) {
