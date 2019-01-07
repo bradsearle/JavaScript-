@@ -1,2 +1,3 @@
-var example = true;
-console.log(example);
+var breakfast = ['coffee', 'croissant'];
+
+console.log(breakfast);
