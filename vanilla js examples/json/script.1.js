@@ -1,5 +1,6 @@
 //Create variable for json data
-const requestURL = '#';
+const requestURL =
+  'https://ecn1.eshop2.macsales.com/api/used-macs/config/?item=UAEC1D59XXX1XXB';
 //
 const requestMac = new XMLHttpRequest();
 requestMac.open('GET', requestURL);
