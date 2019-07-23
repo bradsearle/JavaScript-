@@ -1,5 +1,3 @@
-const a = 10;
-
-const b = true;
-
-console.log(a);
+import simpleParallax from 'simple-parallax-js';
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image);
