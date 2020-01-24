@@ -54,9 +54,6 @@ function displayContent() {
     feedMeContent.innerHTML += `
     
       <p>${superData.members[i].secretIdentity}</p>
-     
-  
-   
   `;
   }
 }
@@ -64,3 +61,16 @@ function displayContent() {
 displayContent();
 
 // <p>Watch out for ${superData.members[i].pronoun} ${superData.members[i].powers}</p>
+
+// function displayContent() {
+//   for (i = 0; i < superData.members.length; i++) {
+//     feedMeContent.innerHTML += `
+
+//       <p>${superData.members[i].secretIdentity}</p>
+//   `;
+//   }
+// }
+
+var numbers = [29, 39, 77, 1342];
+
+var totalSum = 0;

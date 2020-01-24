@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>
+    <a class="toggle" href="#example">Toggle Div</a>
+  </p>
+
+  <div class="toggle-content" id="example">
+    Here's some text we want to toggle visibility of. Let's do it!
+  </div>
+
+  <script>
+    // https://jsfiddle.net/bradsearle/ucjbaezd/
+
+
+    var show = function (elem) {
+      elem.style.display = 'block';
+    };
+
+    var hide = function (elem) {
+      elem.style.display = 'none';
+    };
+
+    var toggle = function (elem) {
+
+      // If the element is visible, hide it
+      if (window.getComputedStyle(elem).display === 'block') {
+        hide(elem);
+        return;
+      }
+
+      // Otherwise, show it
+      show(elem);
+
+    };
+
+    // Listen for click events
+    document.addEventListener('click', function (event) {
+
+      // Make sure clicked element is our toggle
+      if (!event.target.classList.contains('toggle')) return;
+
+      // Prevent default link behavior
+      event.preventDefault();
+
+      // Get the content
+      var content = document.querySelector(event.target.hash);
+      if (!content) return;
+
+      // Toggle the content
+      toggle(content);
+
+    }, false);
+  </script>
+
+
+</body>
+
+</html>
