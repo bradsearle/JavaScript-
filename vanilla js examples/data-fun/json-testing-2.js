@@ -69,4 +69,5 @@ function displayContent() {
 }
 
 displayContent();
+
 changeColor();
