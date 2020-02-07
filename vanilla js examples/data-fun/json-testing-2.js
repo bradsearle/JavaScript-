@@ -33,7 +33,6 @@ var superData = {
         ' Interdimensional travel'
       ]
     },
-
     {
       name: 'Penelope Power',
       age: 1342,
